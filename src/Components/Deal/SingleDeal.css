@@ -1,0 +1,43 @@
+
+.detalis-page{
+display: flex;
+justify-content: center;
+gap: 4.2rem;
+align-items: flex-start;
+background-color: #fff;
+padding: 2.4rem 6.2rem;
+border-radius: 7px;
+opacity: 0.9;
+color: rgb(148, 30, 30);
+margin-top: 6.2rem;
+height: 100%;
+}
+.detalis-page .detalis-info{
+ width: 70%;
+}
+.info-publisher , .info-title{
+  margin-bottom: 10px;
+}
+.info-Price{
+color: #777;
+margin-bottom: 15px;
+display:inline-block;
+margin-left: 10px;
+}
+ul li{
+  color: #777;
+  margin-bottom: 10px;
+}
+.detalis-info .btn{
+  margin-top: 10px;
+}
+.detalis-info .info-rating{
+  color: #777;
+  margin-bottom: 15px;
+}
+.list{
+  margin-top: 10px;
+}
+.cheapestPrice{
+  color: #777;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Cards from './Components/Card/Cards';
+import SingleDeal from './Components/Deal/SingleDeal';
 import Search from './Components/Search/Search';
 
 function App() {
@@ -68,8 +69,9 @@ function App() {
   return (
     <>
       <div className='container'>
-        <Search  searchItems={searchItems}SearchHandle={SearchHandle} />
-        <Cards games={games} />
+        {/* <Search  searchItems={searchItems}SearchHandle={SearchHandle} />
+        <Cards games={games} /> */}
+        <SingleDeal />
       </div>
     </>
   );
