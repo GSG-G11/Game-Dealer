@@ -22,3 +22,9 @@ body {
   align-items: center;
   gap: 3.2rem;
 }
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 1.2rem 3rem;
+    margin: auto;
+  }
+}
