@@ -5,12 +5,12 @@
 }
 
 body {
-  background: url(../public/img/background.png);
+  background: url(../public/img/background.png) fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(61, 0, 0);
   backdrop-filter: blur(2px) brightness(0.5);
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
