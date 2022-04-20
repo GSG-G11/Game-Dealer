@@ -1,18 +1,30 @@
-import React from 'react'
+import React from 'react';
+import './Card.css';
 
-export default function Card() {
+export default function Card(props) {
+  const {title, thumb, normalPrice, salePrice, dealRating} = props;
   return (
-    <div className='card'>
-     <div className="card-img">
-       <img src="" alt="" />
-     </div>
+    <div className="card">
+      <div className="card-img">
+        <img src={thumb} alt="" />
+      </div>
 
-     <div className="card-body">
-       <h2 className='game-title'> batman </h2>
-       <span className='sale-price'>10</span>
-       <span className='normal-price'>50</span>
-       <span className='game-rating'> 84 % </span>
-     </div>
+      <div className="card-body">
+        <h2 className="game-title"> {title}</h2>
+        <p className="normal-price">
+          <span> Original Price:</span> <sup>$</sup>
+          {normalPrice}
+        </p>
+
+        <p className="sale-price">
+          <span> Price after Sale: </span> <sup>$</sup>
+          {salePrice}
+        </p>
+
+        <p className="game-rating">
+          <span>Deal Rating: </span> {dealRating}
+        </p>
+      </div>
     </div>
-  )
+  );
 }
