@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Card.css';
 
 export default function Card(props) {
-  const {title, thumb, normalPrice, salePrice, dealRating} = props;
+  const {title, thumb, normalPrice, salePrice, dealRating, dealID} = props;
   return (
     <div className="card">
       <div className="card-img">
@@ -10,7 +11,9 @@ export default function Card(props) {
       </div>
 
       <div className="card-body">
-        <h2 className="game-title"> {title}</h2>
+        <Link className="game-title" to={`deals/${dealID}`}>
+          {title}
+        </Link>
         <p className="normal-price">
           <span> Original Price:</span> <sup>$</sup>
           {normalPrice}

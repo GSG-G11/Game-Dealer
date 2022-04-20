@@ -27,6 +27,11 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #111;
+  text-decoration: none;
+}
+.game-title:hover {
+  color: rgb(148, 30, 30);
 }
 .normal-price {
   text-decoration: line-through;
