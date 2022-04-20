@@ -1,6 +1,8 @@
 import React from 'react';
 import './Search.css';
-function Search() {
+
+
+function Search({SearchHandle ,searchItems}) {
   return (
     <div>
       <form className="form-control">
@@ -9,8 +11,9 @@ function Search() {
           name="search"
           placeholder="Search for a deal..."
           className="input-control"
+          onChange={(e) => searchItems(e.target.value)}
         />
-        <button className="btn">Search</button>
+        <button className="btn" onClick={SearchHandle}>Search</button>
       </form>
     </div>
   );
