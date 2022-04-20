@@ -46,3 +46,14 @@ ul li {
   text-decoration: none;
   color: rgb(0, 0, 109);
 }
+@media screen and (max-width: 425px) {
+  .detalis-page {
+  display: block;
+  margin-top: 0rem;
+  padding: 1.4rem 6.2rem;
+  
+  }
+  .detalis-info .btn {
+font-size: 0.6rem;
+  }
+}

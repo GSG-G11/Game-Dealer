@@ -75,7 +75,7 @@ function App() {
             render={() => {
               return (
                 <>
-                  <Search searchItems={searchItems} SearchHandle={SearchHandle} />
+                  <Search searchItems={searchItems} SearchHandle={SearchHandle} isSearch={isSearch}/>
                   <Cards games={games} />
                 </>
               );
