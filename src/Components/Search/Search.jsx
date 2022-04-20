@@ -4,7 +4,7 @@ import './Search.css';
 function Search({SearchHandle, searchItems ,isSearch}) {
   return (
   <>
-   {isSearch && <div class="loader">Loading...</div>}
+  {isSearch && <div class="loader">Loading...</div>}
   {!isSearch && <div className="header">
   <img src="img/logo/cover.png" alt="logo" className="logo" />
   <form className="form-control">
