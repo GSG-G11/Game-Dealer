@@ -23,7 +23,7 @@ export default function Cards() {
         {!games.length && <h1>Loading...</h1>}
         {games.length &&
           games.map(game => {
-            return <Card {...game} />;
+            return <Card {...game} key={game.gameID} />;
           })}
       </div>
     </div>
